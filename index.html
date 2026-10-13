@@ -26,20 +26,12 @@
 .links .tiktok-link svg,.links .instagram-link svg{display:block}
 @media(max-width:390px){.links{gap:9px}.brand{font-size:25px}}
 
-/* Video gallery */
-.video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.video-card{border:1px solid #f1e4e5;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 6px 24px rgba(75,45,49,.055)}
-.video-card video{width:100%;aspect-ratio:16/10;object-fit:contain;display:block;background:#241c25}
-.video-card .cardinfo{padding:15px}
-.video-card .cardacts a{display:flex;align-items:center;justify-content:center;text-decoration:none}
-.video-empty{padding:34px;text-align:center;border:1px dashed #d8bac4;border-radius:16px;color:#816b76;background:#fff}
-@media(max-width:850px){.video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:580px){.video-grid{grid-template-columns:1fr}.links{gap:10px}.brand{font-size:25px}}
+@media(max-width:580px){.links{gap:10px}.brand{font-size:25px}}
 
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap nav"><a class="brand" href="#home">Bebo <span>♡</span></a><nav class="links" aria-label="Navigation"><a href="#home">Home</a><a href="#gallery">Gallery</a><a href="#videos">Videos</a><a class="tiktok-link" href="https://www.tiktok.com/@laibachaudary28?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener noreferrer" aria-label="Laiba on TikTok (opens in a new tab)" title="Laiba on TikTok"><svg viewBox="0 0 24 24" width="23" height="23" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16.7 2h-3.2v13.3a3.3 3.3 0 1 1-2.9-3.28V8.75a6.56 6.56 0 1 0 6.1 6.55V8.63a8.8 8.8 0 0 0 5.3 1.68V7.1a5.5 5.5 0 0 1-5.3-5.1Z"/></svg></a><a class="instagram-link" href="https://www.instagram.com/official_laibachaudary" target="_blank" rel="noopener noreferrer" aria-label="Laiba on Instagram (opens in a new tab)" title="Laiba on Instagram"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></nav><span class="tag">♡ My Memory Collection</span></div></header>
+<header class="top"><div class="wrap nav"><a class="brand" href="#home">Bebo <span>♡</span></a><nav class="links" aria-label="Navigation"><a href="#home">Home</a><a href="#gallery">Gallery</a><a class="tiktok-link" href="https://www.tiktok.com/@laibachaudary28?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener noreferrer" aria-label="Laiba on TikTok (opens in a new tab)" title="Laiba on TikTok"><svg viewBox="0 0 24 24" width="23" height="23" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16.7 2h-3.2v13.3a3.3 3.3 0 1 1-2.9-3.28V8.75a6.56 6.56 0 1 0 6.1 6.55V8.63a8.8 8.8 0 0 0 5.3 1.68V7.1a5.5 5.5 0 0 1-5.3-5.1Z"/></svg></a><a class="instagram-link" href="https://www.instagram.com/official_laibachaudary" target="_blank" rel="noopener noreferrer" aria-label="Laiba on Instagram (opens in a new tab)" title="Laiba on Instagram"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></nav><span class="tag">♡ My Memory Collection</span></div></header>
 <main>
 <section id="home" class="hero"><div class="wrap hero-rework">
 <div class="featured-pair"><figure class="featured-shot"><img src="208280.png" alt="Featured memory 208280" fetchpriority="high"></figure><figure class="featured-shot"><img src="front%20%281%29.png" alt="Featured memory front 1" fetchpriority="high"></figure></div>
@@ -51,7 +43,6 @@
 </div><div class="actions"><a class="btn primary" href="#gallery">Explore Photos ↗</a></div></div>
 </div></section>
 <section id="gallery" class="section"><div class="wrap"><div class="sectop"><div><div class="eyebrow">The photo album</div><h2>A Gallery of Memories ♡</h2><div class="muted">Every photo, a moment worth keeping.</div></div><div class="stats" id="imageStat"></div></div><div class="toolbar"><input class="search" type="search" id="photoSearch" placeholder="Search photo files…" aria-label="Search photos"><span class="count" id="photoCount"></span></div><div id="photoGrid" class="grid"></div><div class="empty" id="photoEmpty" hidden>No photos match your search.</div><div class="note">A collection of Bebo memories. Select View to see a full-size photo, or Download to save it. Remember: GitHub Pages is publicly accessible.</div></div></section>
-<section id="videos" class="section soft"><div class="wrap"><div class="sectop"><div><div class="eyebrow">Moving memories</div><h2>Bebo Videos ♡</h2><div class="muted">Little moments, brought to life.</div></div><div class="stats" id="videoStat"></div></div><div id="videoGrid" class="video-grid"></div><div id="videoEmpty" class="video-empty" hidden>No videos added yet. Upload an MP4 file and add its exact filename to the VIDEOS list in this HTML file.</div></div></section>
 </main><footer class="end">Bebo Collection ♡ &nbsp; · &nbsp; A personal memory archive</footer>
 <div id="overlay" class="overlay" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true"><button id="close" class="close" aria-label="Close">×</button><button class="prev" id="prev" aria-label="Previous">‹</button><div class="viewbox" id="viewbox"></div><button class="next" id="next" aria-label="Next">›</button><div class="bar"><span id="viewerInfo"></span><a id="download" href="#" download>↓ Download</a></div></div>
 <script>
@@ -59,10 +50,6 @@
 // These filenames exactly match the media currently present in your GitHub repository.
 // For private/local use: save this HTML next to those media files on your computer.
 const FILES=[ "11.png", "14.png", "15.png", "16.png", "1.png", "1781898484774.png" , "182533.png", "182742 (2).png", "183007 (2).png", "184901.png", "186799.png", "186800.png", "192319.png", "196312.jpg", "196524.png", "196528.png", "196531.png", "196543.png", "196544.png", "2.png", "3.png",  "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png",  "12.png", "13.png", "17.png", "196545.png", "196546.png", "196547.png", "196548.png", "196549.png", "196550 (2).png", "196555 (2).png", "196572 (2).png", "196574.png", "208280.png", "208281.png", "ChatGPT Image Sep 13, 2026, 11_03_08 AM.png", "ChatGPT Image Sep 30, 2026, 11_02_29 PM.png", "Jaan.png", "bebo g.jpg", "chubby laiba.png", "front (1).jpeg", "front (1).jpg", "front (1).png", "front (17).png", "front (18).png", "front (19).png", "front (2).jpg", "front (20).png", "front (21).png", "front (22).png", "front (23).png", "front (24).png", "front (25).png", "front (26).png", "front (33).png", "front (4).png", "front (5).png", "front (8).png", "front (9).png", "hero 3.png", "hero.png", "red.png"];
-// Add your future video filenames here (same folder as index.html):
-const VIDEOS = [
-"bebo.mp4"
-];
 const images=FILES.filter(x=>/\.(png|jpg|jpeg|webp)$/i.test(x));
 const $=id=>document.getElementById(id);
 const escapeHTML=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -78,24 +65,8 @@ function closeViewer(){$('overlay').classList.remove('open');$('overlay').setAtt
 $('close').addEventListener('click',closeViewer);$('prev').addEventListener('click',()=>shift(-1));$('next').addEventListener('click',()=>shift(1));$('overlay').addEventListener('click',e=>{if(e.target===$('overlay'))closeViewer()});document.addEventListener('keydown',e=>{if(!$('overlay').classList.contains('open'))return;if(e.key==='Escape')closeViewer();if(e.key==='ArrowRight')shift(1);if(e.key==='ArrowLeft')shift(-1)});
 $('photoSearch').addEventListener('input',e=>renderPhotos(e.target.value));$('imageStat').textContent=`${images.length} photographs`;
 renderPhotos();
-// For each new video: upload the file to the repository and add its exact filename to VIDEOS above.
-// Video player controls allow play, pause, seeking, sound, and fullscreen.
-function renderVideos(){
-  const grid=$('videoGrid'); grid.replaceChildren();
-  $('videoStat').textContent=`${VIDEOS.length} videos`;
-  $('videoEmpty').hidden=VIDEOS.length!==0;
-  VIDEOS.forEach((name)=>{
-    const card=document.createElement('article');card.className='video-card';
-    const player=document.createElement('video');player.controls=true;player.preload='metadata';player.playsInline=true;player.src=url(name);player.setAttribute('aria-label','Bebo video');
-    const details=document.createElement('div');details.className='cardinfo';
-    details.innerHTML=`<div class="filename">Bebo ♡</div><div class="small">Video memory</div>`;
-    const acts=document.createElement('div');acts.className='cardacts';
-    const dl=document.createElement('a');dl.className='mini filled';dl.href=url(name);dl.download=name;dl.textContent='↓ Download Video';
-    acts.appendChild(dl);details.appendChild(acts);card.append(player,details);grid.appendChild(card);
-  });
-}
-renderVideos();
 </script>
 </body>
 </html>
+
 

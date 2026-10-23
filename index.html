@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="color-scheme" content="light" />
+  <meta name="color-scheme" content="dark" />
   <title>Bebo Collection · Private Memories</title>
   <link rel="icon" type="image/jpeg" href="front%20%281%29.jpeg" />
   <link rel="apple-touch-icon" href="front%20%281%29.jpeg" />
@@ -358,7 +358,95 @@
       .grid{grid-template-columns:1fr}
     }
     /* SCREENSHOT MATCH FINAL END */
-  </style>
+  
+
+/* DARK BLOSSOM REDESIGN — overrides legacy screenshot styles */
+:root {--bg:#110f13;--panel:#1a151b;--soft:#271e26;--soft-2:#382632;--ink:#f7e9ec;--muted:#c9aab5;--rose:#d48fa4;--rose-dark:#b56b82;--rose-light:#eec1ce;--line:#60404e;--shadow:0 20px 55px rgba(0,0,0,.42);--shadow-soft:0 10px 35px rgba(0,0,0,.28)}
+html {scroll-padding-top:88px}
+body {background:radial-gradient(ellipse 45% 22% at 50% 4%,#30212b 0,transparent 100%),#110f13!important;color:var(--ink);}
+body::before,body::after {display:block!important;background:radial-gradient(circle,#6f3c53,transparent 72%);opacity:.12;z-index:0}
+.top {position:sticky;height:auto;background:rgba(20,16,21,.88);border-bottom:1px solid #5c3a493f;backdrop-filter:blur(22px)}
+.wrap,.section .wrap {width:min(1530px,calc(100% - 72px));max-width:none}
+.nav {height:88px;position:relative;z-index:35}
+.brand {color:#f3c3d1;font-size:43px;text-shadow:0 0 22px #a65d7242;white-space:nowrap}
+.nav-center {gap:37px;color:#dfc3cb;font-size:17px}
+.nav-center a:hover,.nav-center a.active {color:#ffccd9}
+.nav-center a.active::after {background:#e49bad}
+.icon-link {color:#f2ccd6}
+.nav-pill {background:linear-gradient(135deg,#a7647e,#704a5c);border:1px solid #edb3c5;box-shadow:0 0 24px #a45d744a;color:#fff2f5;font-size:14px}
+.hero {padding:32px 0 20px;background:transparent;overflow:hidden}
+.hero .wrap {width:min(1450px,calc(100% - 80px))}
+.hero-shell {background:transparent;box-shadow:none;padding:0}
+.hero-grid {grid-template-columns:minmax(65px,115px) minmax(0,1fr) minmax(0,1fr) minmax(65px,115px);gap:24px}
+.side-copy {color:#d59ead;font-size:11px;letter-spacing:.31em;opacity:.88}
+.side-copy .rule {background:#b97489}
+.hero-card {height:clamp(320px,34vw,480px);border:2px solid #dca0af;border-radius:30px;background:#22181e;box-shadow:0 15px 45px #0009,0 0 28px #be738827}
+.hero-card::after {background:linear-gradient(180deg,transparent 60%,#2410185a)}
+.script-left,.script-right,.tiny-heart {color:#ffe0e9}
+.tribute {padding:32px 0 10px}
+.eyebrow {color:#dca6b5;font-size:14px}
+.eyebrow::before,.eyebrow::after {background:#b36d82}
+.tribute h1 {color:#f2dce3;font-weight:400;font-size:clamp(39px,4.5vw,67px)}
+.tribute h1 em {color:#d18ca2}
+.tribute p {color:#c9abb6;font-size:clamp(15px,1.35vw,19px);max-width:860px}
+.section {background:transparent;padding:25px 0 85px}
+.gallery-shell {background:transparent;border:0;border-radius:0;box-shadow:none;padding:0}
+.gallery-top {gap:22px;margin-bottom:28px;align-items:center}
+.gallery-title-wrap {gap:22px}
+.gallery-title {font-size:clamp(44px,4vw,70px);color:#f4c4d1;text-shadow:0 0 28px #a6587345}
+.gallery-sub {color:#dba8b7;font-size:12px;letter-spacing:.28em}
+.filters {gap:10px;justify-content:flex-end}
+.filter {border:1px solid #8a596c;background:#19131a;color:#edbecb;border-radius:999px;padding:12px 25px;font-size:16px;transition:background .2s,border-color .2s,transform .2s;white-space:nowrap}
+.filter:hover {border-color:#e6abbc;background:#30212a;transform:translateY(-1px)}
+.filter.active {background:linear-gradient(165deg,#dba0ae,#a75e79);border-color:#f4c1ce;color:white;box-shadow:0 0 20px #c37b9657}
+.grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.photo-card {min-width:0;position:relative;background:#1a151b;border:1px solid #bb7a8c;border-radius:22px;overflow:hidden;box-shadow:0 15px 36px #0009,0 0 0 1px #f2a6ba20;transition:transform .28s,box-shadow .28s,border-color .28s}
+.photo-card:hover {transform:translateY(-5px);border-color:#ffbbcb;box-shadow:0 22px 52px #000c,0 0 24px #bd748a4a}
+.thumb {position:relative;aspect-ratio:3/4.05;overflow:hidden;background:linear-gradient(135deg,#402934,#171217)}
+.thumb::after {content:"";position:absolute;inset:45% 0 0;background:linear-gradient(0deg,#1a151b 0%,#1a151b80 32%,transparent 100%);pointer-events:none}
+.thumb img {width:100%;height:100%;object-fit:cover;object-position:50% 26%;transition:transform .55s ease;cursor:zoom-in}
+.photo-card:hover .thumb img {transform:scale(1.04)}
+.cardinfo {position:relative;margin-top:-48px;padding:13px 18px 19px;z-index:2;min-height:158px;background:linear-gradient(180deg,transparent 0,#1a151b 38%)}
+.filename {font-family:'Playfair Display',Georgia,serif;color:#fbe1e8;font-size:24px;font-weight:500}
+.small {font-family:'Playfair Display',Georgia,serif;color:#dab3be;font-size:15px;margin-top:3px}
+.cardacts {display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:13px}
+.mini {min-width:0;display:flex;align-items:center;justify-content:center;gap:4px;border:1px solid #c58c9e;border-radius:15px;padding:12px 6px;background:#171218;color:#f3cbd5;font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:500;transition:background .2s,transform .2s}
+.mini:hover {background:#39202d;transform:translateY(-1px)}
+.mini.filled {background:linear-gradient(160deg,#d99baa,#ac617d);border:1px solid #f2bccb;color:white;box-shadow:0 7px 20px #9d4a683a}
+.card-heart {position:absolute;right:14px;top:13px;z-index:3;color:#fff0f4;font-size:28px;text-shadow:0 2px 12px #000;line-height:1;pointer-events:none}
+.photo-card::after {content:'✿';position:absolute;bottom:133px;right:11px;color:#cb8b9b55;font-size:25px;pointer-events:none;z-index:3}
+.overlay {background:rgba(10,7,11,.96);backdrop-filter:blur(12px);padding:65px 58px 85px}
+.viewbox img {box-shadow:0 15px 60px #0009;border-radius:15px}
+.close,.prev,.next {background:#35212ccc;border:1px solid #cc91a5;color:#ffe3ec;cursor:pointer}
+.bar a {border:1px solid #dc9cb1;background:#6b3c51}
+.end {background:#151017;color:#cba9b5;border-top:1px solid #513541}
+.floral-edge {opacity:.58;filter:brightness(.75) saturate(.95);z-index:1}
+.floral-lt,.floral-rt {position:absolute;z-index:32}
+.flower-fallback {display:flex;align-items:center;justify-content:center;height:100%;padding:20px;color:#c9aeb9;font-family:'Playfair Display',serif;text-align:center}
+button:focus-visible,a:focus-visible {outline:3px solid #ffd3e0;outline-offset:3px}
+@media(max-width:1200px) {.wrap,.section .wrap{width:calc(100% - 42px)}.gallery-top{flex-direction:column;align-items:flex-start}.filters{justify-content:flex-start}.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-grid{gap:15px}}
+@media(max-width:860px) {.nav{height:78px}.brand{font-size:35px}.nav-center{gap:18px}.nav-pill{display:none}.hero .wrap{width:calc(100% - 40px)}.hero-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.side-copy{display:none}.hero-card{height:clamp(280px,47vw,390px)}.gallery-title-wrap{flex-wrap:wrap}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px) {
+ html{scroll-padding-top:110px}.top{position:sticky}.wrap,.section .wrap,.hero .wrap{width:calc(100% - 24px)}
+ .nav{height:auto;min-height:95px;padding:12px 0;display:flex;flex-direction:column;gap:11px;flex-wrap:nowrap}
+ .brand{font-size:32px;line-height:1}.nav-center{gap:22px;font-size:15px;flex-wrap:nowrap;justify-content:center;margin:0}.icon-link svg{width:21px;height:21px}
+ .hero{padding:20px 0 9px}.hero-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+ .hero-card{height:clamp(195px,58vw,310px);border-radius:17px;border-width:1px;margin:0}.hero-card.left img{object-position:50% 30%}.hero-card.right img{object-position:50% 25%}
+ .script-left{font-size:35px;bottom:12px}.script-right{font-size:22px;top:auto;bottom:17px;right:8px}.tiny-heart{font-size:31px;right:12px;top:9px}
+ .tribute{padding:25px 7px 4px}.eyebrow{font-size:10px;letter-spacing:.17em;gap:8px}.eyebrow::before,.eyebrow::after{width:20px}
+ .tribute h1{font-size:clamp(31px,8.2vw,47px);line-height:1.13;margin:12px 0}.tribute p{font-size:14px;line-height:1.6}
+ .section{padding:22px 0 50px}.gallery-top{gap:17px;margin-bottom:17px}.gallery-title{font-size:44px}.gallery-sub{font-size:10px;letter-spacing:.19em}.gallery-title-wrap{gap:6px}
+ .filters{display:flex;flex-wrap:nowrap;overflow-x:auto;max-width:100%;width:100%;gap:8px;padding:3px 1px 9px;scrollbar-width:thin;scrollbar-color:#8e6273 transparent}
+ .filter{flex:0 0 auto;font-size:13px;padding:9px 15px}
+ .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .photo-card{border-radius:14px}.thumb{aspect-ratio:3/4.35}.cardinfo{padding:10px 8px 11px;margin-top:-34px;min-height:126px}.filename{font-size:19px}.small{font-size:12px}.cardacts{gap:5px;margin-top:10px}.mini{font-size:12px;padding:10px 3px;border-radius:10px}.card-heart{font-size:23px;top:10px;right:9px}.photo-card::after{display:none}
+ .overlay{padding:65px 10px 90px}.viewbox img{max-height:calc(100dvh - 175px)}.prev,.next{bottom:20px;top:auto;transform:none;width:42px;height:42px}.close{top:15px;bottom:auto;right:14px}.bar{bottom:20px;max-width:calc(100% - 120px);left:60px;right:60px;gap:7px;font-size:12px}.bar a{padding:10px 9px;white-space:nowrap}
+ .floral-edge{opacity:.32}.floral-lt,.floral-rt{transform:scale(.64);transform-origin:top left}.floral-rt{transform-origin:top right}
+}
+@media(max-width:350px){.grid{grid-template-columns:1fr}.thumb{aspect-ratio:4/4}.cardinfo{padding:12px 15px 16px}.mini{font-size:14px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+</style>
 </head>
 <body>
   <span class="petal p1"></span><span class="petal p2"></span><span class="petal p3"></span><span class="petal p4"></span><span class="petal p5"></span><span class="petal p6"></span>
@@ -513,7 +601,7 @@
       const el = document.createElement('article');
       el.className = 'photo-card';
       el.innerHTML = `
-        <div class="thumb"><img loading="lazy" src="${url(name)}" alt="Bebo memory"></div>
+        <div class="thumb"><img loading="lazy" decoding="async" src="${url(name)}" alt="Bebo photo memory"><span class="card-heart" aria-hidden="true">♡</span></div>
         <div class="cardinfo">
           <div class="filename">Bebo ♡</div>
           <div class="small">Photo memory</div>
@@ -526,6 +614,7 @@
       const img = el.querySelector('img');
       viewBtn.addEventListener('click', () => openViewer(filteredImages(), filteredImages().indexOf(name)));
       img.addEventListener('click', () => openViewer(filteredImages(), filteredImages().indexOf(name)));
+      img.addEventListener('error', () => { img.style.opacity = '.15'; img.alt = 'Image file unavailable: ' + name; });
       return el;
     }
 
@@ -590,9 +679,28 @@
       if (e.key === 'ArrowLeft') shift(-1);
     });
 
+    // Make gallery navigation track the visible page section.
+    const navLinks = document.querySelectorAll('.nav-center a[href^="#"]');
+    function updateNav(){
+      const galleryActive = location.hash === '#gallery' || (window.scrollY > document.querySelector('#gallery').offsetTop - 180);
+      navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === (galleryActive ? '#gallery' : '#home')));
+    }
+    window.addEventListener('scroll', updateNav, {passive:true});
+    window.addEventListener('hashchange', updateNav);
+    updateNav();
+    // Touch-friendly image viewer swiping.
+    let touchStartX = null;
+    $('viewbox').addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].clientX; }, {passive:true});
+    $('viewbox').addEventListener('touchend', e => {
+      if(touchStartX === null) return;
+      const delta = e.changedTouches[0].clientX - touchStartX;
+      if(Math.abs(delta) > 55) shift(delta < 0 ? 1 : -1);
+      touchStartX = null;
+    }, {passive:true});
     render();
   </script>
 </body>
 </html>
+
 
 

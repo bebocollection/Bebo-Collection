@@ -446,7 +446,30 @@ button:focus-visible,a:focus-visible {outline:3px solid #ffd3e0;outline-offset:3
 @media(max-width:350px){.grid{grid-template-columns:1fr}.thumb{aspect-ratio:4/4}.cardinfo{padding:12px 15px 16px}.mini{font-size:14px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 
-</style>
+
+    /* FIX: keep both featured portraits side by side on every screen. */
+    .hero .hero-grid {
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+      gap:clamp(10px,2.2vw,26px);
+      align-items:stretch;
+      width:min(100%,1020px);
+      margin-inline:auto;
+    }
+    .hero .hero-grid > .side-copy {display:none !important;}
+    .hero .hero-card {
+      display:block;
+      margin:0 !important; /* reset browser default figure margin */
+      width:100%;min-width:0;
+      height:clamp(320px,38vw,510px);
+    }
+    .hero .hero-card img {display:block;width:100%;height:100%;object-fit:cover;}
+    @media(max-width:560px) {
+      .hero .hero-grid {gap:9px;}
+      .hero .hero-card {height:clamp(215px,65vw,340px);}
+    }
+
+  </style>
 </head>
 <body>
   <span class="petal p1"></span><span class="petal p2"></span><span class="petal p3"></span><span class="petal p4"></span><span class="petal p5"></span><span class="petal p6"></span>
@@ -703,6 +726,7 @@ button:focus-visible,a:focus-visible {outline:3px solid #ffd3e0;outline-offset:3
   </script>
 </body>
 </html>
+
 
 
 

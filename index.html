@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="color-scheme" content="dark" />
-  <title>Bebo Collection · Private Memories</title>
+  <meta name="color-scheme" content="light" />
+  <title>Laiba | A Beautiful Collection of Memories</title>
   <link rel="icon" type="image/jpeg" href="front%20%281%29.jpeg" />
   <link rel="apple-touch-icon" href="front%20%281%29.jpeg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -469,7 +469,32 @@ button:focus-visible,a:focus-visible {outline:3px solid #ffd3e0;outline-offset:3
       .hero .hero-card {height:clamp(215px,65vw,340px);}
     }
 
-  </style>
+  
+/* Reference-inspired redesign, preserving original image filenames and gallery viewer */
+:root{--bg:#fffaf6;--ink:#251b18;--rose:#aa6258;--muted:#695d58}
+html{scroll-padding-top:70px}body{background:#fffaf6;color:var(--ink);font-family:Georgia,'Times New Roman',serif}body::before,body::after,.petal,.floral-edge{display:none!important}
+.wrap,.hero .wrap,.section .wrap{width:min(1400px,calc(100% - 92px));max-width:1400px}
+.top{position:sticky;top:0;height:58px;background:rgba(255,250,246,.96);border-bottom:1px solid #f0e4db;z-index:40}
+.nav{height:58px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:'Great Vibes',cursive;font-style:normal;font-size:42px;color:#231a17;white-space:nowrap}.brand span{font-family:Georgia,serif;font-size:30px;color:#a65e53;padding-left:8px}
+.nav-center{display:flex;gap:50px;font:17px Georgia,serif;color:#30231e}.nav-center a.active{color:#a7554d}.nav-center a.active::after{bottom:-7px;background:#a7554d;height:2px}
+.nav-actions{display:flex;align-items:center;gap:26px}.nav-heart{font-size:32px;color:#a65e53}.nav-pill{display:inline-block;border:0;border-radius:35px;padding:12px 25px;background:#a9655b;color:white;box-shadow:none;font:15px Georgia,serif}
+.hero{height:400px;padding:0;position:relative;overflow:hidden;background:#e8d4c6}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(249,237,226,.97) 0%,rgba(249,237,226,.93) 26%,rgba(249,237,226,.5) 43%,rgba(249,237,226,0) 61%),url('208280.png') center 33%/cover no-repeat}
+.hero-content{position:relative;z-index:1;height:100%;display:flex;align-items:center;justify-content:space-between}
+.hero-copy{max-width:640px}.kicker{font-size:11px;letter-spacing:.43em;color:#a35d51;display:flex;align-items:center;gap:17px}.kicker span{height:1px;width:43px;background:#bd8b7e}
+.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(42px,4.3vw,68px);font-weight:400;letter-spacing:-2px;line-height:1.05;margin:15px 0 15px;color:#1e1713}.hero h1 i,.gallery-title i{font-style:normal;color:#b96961;font-size:.67em}
+.hero p{font-size:18px;line-height:1.35;color:#61564e;margin:0 0 20px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.primary-btn,.outline-btn{padding:13px 28px;border-radius:50px;font-size:15px}.primary-btn{background:#a9655b;color:white}.outline-btn{border:1px solid #cba294;color:#6a5048;background:#fff9f266}
+.hero-handwriting{font-family:'Great Vibes',cursive;font-size:36px;line-height:1.04;color:#70463c;text-align:center;transform:rotate(-12deg);margin-right:15px;text-shadow:0 1px 5px #f4d9c8}.hand-line{display:block;width:80px;height:1px;background:#a9655b;margin:18px auto 0}
+.section{padding:29px 0 20px;background:linear-gradient(180deg,#fffaf6,#fdf7f1)}.gallery-top{display:flex;align-items:end;gap:20px;margin-bottom:18px}.gallery-title{font-family:'Playfair Display',Georgia,serif;font-size:45px;font-style:normal;font-weight:400;line-height:1.08;color:#231914;margin:7px 0 0;white-space:nowrap}.gallery-intro{margin:0 auto 4px;font-size:14px;color:#655a53;line-height:1.5}.gallery-intro span{color:#a9655b;font-size:28px;margin-left:10px}.filters{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:4px}.filter{border:0;background:#f5ebe5;border-radius:30px;padding:10px 15px;font:13px Georgia,serif;color:#695d56}.filter.active{background:#a9655b;color:white;box-shadow:none}
+.grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}.photo-card{border-radius:10px;background:#fff9f3;border:1px solid #f0e6dd;box-shadow:0 7px 18px #5b392012;overflow:hidden}.thumb{aspect-ratio:4/5.1;position:relative;background:#eadbd0}.thumb img{width:100%;height:100%;object-fit:cover}.card-heart{position:absolute;right:10px;bottom:8px;color:white;font-size:23px;text-shadow:0 1px 6px #5d3935}.cardinfo{padding:11px 12px 13px}.filename{font:15px Georgia,serif;color:#2b201c}.small{font:10px Georgia,serif;letter-spacing:.22em;color:#9c8275;text-transform:uppercase;margin-top:5px}.cardacts{margin-top:10px;display:flex;gap:7px}.mini{font:12px Georgia,serif;padding:8px 6px;border-radius:7px;border:1px solid #e5d2c7;color:#a35d51}.mini.filled{background:#a9655b;color:#fff;border:0}
+.memories-strip{margin:0 20px 8px;padding:18px 34px;border-radius:22px;background:linear-gradient(110deg,#f6e6db,#f4ded2);display:flex;align-items:center;justify-content:space-between;gap:28px}.memories-quote{display:flex;gap:22px;align-items:center;color:#945646;font:29px 'Great Vibes',cursive;line-height:1.12}.flourish{font-size:60px;color:#bd8069}.memory-facts{display:flex;align-items:center}.memory-facts>div{display:flex;gap:14px;align-items:center;padding:5px 24px;border-left:1px solid #dfc8bb;white-space:nowrap}.memory-facts>div:first-child{border-left:0}.fact-icon{font-size:34px;color:#aa6258}.memory-facts p{font:13px Georgia,serif;margin:0}.memory-facts small{display:block;font-size:12px;color:#8a7770;margin-top:4px}
+.about-section{padding:35px 0 40px;background:#fffaf6;text-align:center}.about-section h2{font:36px 'Playfair Display',serif;margin:0 0 10px}.about-section p{max-width:720px;margin:0 auto;color:#6b5d55;line-height:1.6;font-size:16px}.socials{display:flex;justify-content:center;gap:24px;margin-top:16px;color:#a35d51}
+.end{padding:14px 0;background:#252221;color:#f4e9e0;text-align:left}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px}.end .brand{color:#f4e9e0}.end nav{display:flex;gap:32px;font-size:13px}.footer-script{font:23px 'Great Vibes',cursive;color:#cfa58e}
+@media(max-width:1150px){.wrap,.hero .wrap,.section .wrap{width:calc(100% - 48px)}.grid{grid-template-columns:repeat(4,minmax(0,1fr))}.gallery-top{flex-wrap:wrap}.gallery-intro{margin-left:auto}.filters{margin-left:auto}.memory-facts>div{padding:5px 12px}.memories-quote{font-size:24px}}
+@media(max-width:760px){.top,.nav{height:auto;min-height:65px}.nav{flex-wrap:wrap;padding:10px 0}.brand{font-size:35px}.nav-center{order:3;width:100%;justify-content:center;gap:25px;padding:10px 0 2px;font-size:15px}.nav-actions{gap:12px}.nav-heart{font-size:26px}.nav-pill{padding:9px 15px}.hero{height:480px}.hero::before{background:linear-gradient(90deg,rgba(249,237,226,.96) 0%,rgba(249,237,226,.82) 50%,rgba(249,237,226,.22) 100%),url('208280.png') 60% 28%/cover no-repeat}.hero h1{font-size:45px}.hero p{font-size:16px}.hero-handwriting{display:none}.gallery-title{font-size:39px}.gallery-intro{margin:0}.filters{margin:0}.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.memories-strip{flex-direction:column;align-items:stretch}.memory-facts{justify-content:space-between}.footer-row{flex-wrap:wrap;justify-content:center;text-align:center}}
+@media(max-width:520px){.wrap,.hero .wrap,.section .wrap{width:calc(100% - 28px)}.nav-center{gap:18px}.hero{height:490px}.hero h1{font-size:37px;letter-spacing:-1px}.hero p br{display:none}.hero p{max-width:290px}.hero::before{background:linear-gradient(90deg,rgba(249,237,226,.97),rgba(249,237,226,.67)),url('208280.png') 58% center/cover no-repeat}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.gallery-title{font-size:34px}.gallery-top{gap:12px}.filter{padding:8px 12px}.memories-strip{margin:5px 10px;padding:20px}.memory-facts{flex-wrap:wrap;gap:12px}.memory-facts>div{border:0;padding:4px}.footer-row nav{gap:15px}.footer-script{font-size:20px}}
+</style>
 </head>
 <body>
   <span class="petal p1"></span><span class="petal p2"></span><span class="petal p3"></span><span class="petal p4"></span><span class="petal p5"></span><span class="petal p6"></span>
@@ -477,91 +502,18 @@ button:focus-visible,a:focus-visible {outline:3px solid #ffd3e0;outline-offset:3
 
   <!-- Embedded soft-pink cherry blossom decorations, on both sides -->
   <span class="floral-edge floral-lt" aria-hidden="true"></span><span class="floral-edge floral-lm" aria-hidden="true"></span><span class="floral-edge floral-lb" aria-hidden="true"></span><span class="floral-edge floral-rt" aria-hidden="true"></span><span class="floral-edge floral-rm" aria-hidden="true"></span><span class="floral-edge floral-rb" aria-hidden="true"></span>
-  <header class="top">
-    <div class="wrap nav">
-      <a class="brand" href="#home">Bebo <span>♡</span></a>
-      <nav class="nav-center" aria-label="Navigation">
-        <a class="active" href="#home">Home</a>
-        <a href="#gallery">Gallery</a>
-        <a class="icon-link" href="https://www.tiktok.com/@laibachaudary28?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M16.7 2h-3.2v13.3a3.3 3.3 0 1 1-2.9-3.28V8.75a6.56 6.56 0 1 0 6.1 6.55V8.63a8.8 8.8 0 0 0 5.3 1.68V7.1a5.5 5.5 0 0 1-5.3-5.1Z"/></svg>
-        </a>
-        <a class="icon-link" href="https://www.instagram.com/official_laibachaudary" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4.3"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg>
-        </a>
-      </nav>
-      <span class="nav-pill">♡ My Memory Collection</span>
-    </div>
-  </header>
-
-  <main>
-    <section id="home" class="hero">
-      <div class="wrap hero-shell">
-        <div class="hero-grid">
-          <div class="side-copy">
-            <div>Creativity</div>
-            <div>Positivity</div>
-            <div>Beauty</div>
-            <div>Inspiration</div>
-            <div>Always You</div>
-            <div class="rule"></div>
-          </div>
-
-          <figure class="hero-card left">
-            <img src="208280.png" alt="Bebo featured portrait in red dress" fetchpriority="high" />
-            <div class="script-left">Bebo ♡</div>
-          </figure>
-
-          <figure class="hero-card right">
-            <img src="bebo23.png" alt="Bebo featured portrait in golden dupatta" fetchpriority="high" />
-            <div class="tiny-heart">♡</div>
-            <div class="script-right">Same<br>Beautiful<br>You ♡</div>
-            <div class="mini-quote">Some People Make The World Brighter <span class="small-heart">♡</span></div>
-          </figure>
-
-          <div class="side-copy">
-            <div>Some</div>
-            <div>People</div>
-            <div>Make</div>
-            <div>The World</div>
-            <div>Brighter</div>
-            <div class="rule"></div>
-            <div style="font-size:20px;letter-spacing:0;line-height:1">♡</div>
-          </div>
-        </div>
-
-        <div class="tribute">
-          <div class="ornament"><span></span> ♡ <span></span></div>
-          <div class="eyebrow">A Fan-Made Celebration</div>
-          <h1>A Little Tribute to <em>Bebo</em> ♡</h1>
-          <p>A fan-made collection celebrating your creativity, beautiful content, and the positivity you share. Just a small gesture of appreciation from someone who admires your work.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="gallery" class="section">
-      <div class="wrap gallery-shell">
-        <div class="gallery-top">
-          <div class="gallery-title-wrap">
-            <h2 class="gallery-title">Gallery</h2>
-            <div class="gallery-sub">A Collection of Beautiful Moments</div>
-          </div>
-          <div class="filters" id="filters">
-            <button type="button" class="filter active" data-filter="all">All</button>
-            <button type="button" class="filter" data-filter="portraits">Portraits</button>
-            <button type="button" class="filter" data-filter="candid">Candid</button>
-            <button type="button" class="filter" data-filter="traditional">Traditional</button>
-            <button type="button" class="filter" data-filter="selfies">Selfies</button>
-          </div>
-        </div>
-        <div id="photoGrid" class="grid"></div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="end">Bebo Collection ♡ &nbsp; · &nbsp; A personal memory archive</footer>
-
-  <div id="overlay" class="overlay" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+  <header class="top"><div class="wrap nav">
+<a class="brand" href="#home">Laiba <span>♡</span></a>
+<nav class="nav-center" aria-label="Main navigation"><a href="#home" class="active">Home</a><a href="#gallery">Gallery</a><a href="#memories">Memories</a><a href="#about">About</a></nav>
+<div class="nav-actions"><a class="nav-heart" href="#memories" aria-label="Memories">♡</a><a class="nav-pill" href="#gallery">My Gallery &nbsp; →</a></div>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="hero-content wrap"><div class="hero-copy"><div class="kicker">BEAUTIFUL MOMENTS <span></span></div><h1>A Beautiful Collection<br>of Memories <i>♡</i></h1><p>Some faces make ordinary moments extraordinary.<br>This is a small collection of the beautiful moments<br>that make Laiba so special.</p><div class="hero-actions"><a class="primary-btn" href="#gallery">♡ &nbsp; View Gallery &nbsp; →</a><a class="outline-btn" href="#about">About Laiba</a></div></div><div class="hero-handwriting">Same<br>Beautiful Soul<br>Always ♡<span class="hand-line"></span></div></div></section>
+<section class="section" id="gallery"><div class="wrap"><div class="gallery-top"><div><div class="kicker">PHOTO GALLERY <span></span></div><h2 class="gallery-title">Captured Smiles <i>♡</i></h2></div><p class="gallery-intro">Different moods, same beautiful you.<br>A few of my favorite moments with Laiba. <span>♧</span></p><div class="filters" id="filters"><button class="filter active" data-filter="all" type="button">All</button><button class="filter" data-filter="portraits" type="button">Portraits</button><button class="filter" data-filter="candid" type="button">Candid</button><button class="filter" data-filter="traditional" type="button">Traditional</button><button class="filter" data-filter="selfies" type="button">Selfies</button></div></div><div class="grid" id="photoGrid"></div></div></section>
+<section class="memories-strip" id="memories"><div class="memories-quote"><span class="flourish">❧</span><span>“Every picture tells a story,<br>but yours tell the most beautiful ones.” ♡</span></div><div class="memory-facts"><div><span class="fact-icon">♡</span><p>Beautiful Moments<small>Captured with love</small></p></div><div><span class="fact-icon">▢</span><p>Real &amp; Genuine<small>Just Laiba</small></p></div><div><span class="fact-icon">✧</span><p>Always Special<small>Today &amp; Always</small></p></div></div></section>
+<section class="about-section" id="about"><div class="wrap"><h2>A little note ♡</h2><p>A fan-made collection celebrating Laiba's creativity, beautiful content, and the positivity she shares. A small gesture of appreciation from someone who admires her work.</p><div class="socials"><a href="https://www.tiktok.com/@laibachaudary28?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener noreferrer">TikTok ↗</a><a href="https://www.instagram.com/official_laibachaudary" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div></div></section>
+</main><footer class="end"><div class="wrap footer-row"><a class="brand" href="#home">Laiba <span>♡</span></a><nav><a href="#home">Home</a><a href="#gallery">Gallery</a><a href="#memories">Memories</a><a href="#about">About</a></nav><div class="footer-script">♡ &nbsp; Made with love · For Laiba · Always ♡</div></div></footer>
+<div id="overlay" class="overlay" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
     <button id="close" class="close" aria-label="Close">×</button>
     <button class="prev" id="prev" aria-label="Previous">‹</button>
     <div class="viewbox" id="viewbox"></div>
@@ -618,7 +570,7 @@ button:focus-visible,a:focus-visible {outline:3px solid #ffd3e0;outline-offset:3
       "front (8).png", "front (9).png", "hero 3.png", "hero.png", "red.png"
     ];
 
-    const images = FILES.filter(name => /\.(png|jpe?g|webp)$/i.test(name));
+    const images = [...new Set(["208280.png", "bebo23.png", ...FILES])].filter(name => /\.(png|jpe?g|webp)$/i.test(name));
     const $ = id => document.getElementById(id);
     const url = s => s.split('/').map(encodeURIComponent).join('/');
     const escapeHTML = s => s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -642,8 +594,8 @@ button:focus-visible,a:focus-visible {outline:3px solid #ffd3e0;outline-offset:3
       el.innerHTML = `
         <div class="thumb"><img loading="lazy" decoding="async" src="${url(name)}" alt="Bebo photo memory"><span class="card-heart" aria-hidden="true">♡</span></div>
         <div class="cardinfo">
-          <div class="filename">Bebo ♡</div>
-          <div class="small">Photo memory</div>
+          <div class="filename">${({"208280.png":"A Timeless Look","bebo23.png":"Natural Glow"})[name] || "Beautiful Moment"}</div>
+          <div class="small">LAIBA COLLECTION</div>
           <div class="cardacts">
             <button class="mini filled" type="button">View ↗</button>
             <a class="mini" href="${url(name)}" download="${escapeHTML(name)}">↓ Download</a>
@@ -740,6 +692,7 @@ button:focus-visible,a:focus-visible {outline:3px solid #ffd3e0;outline-offset:3
   </script>
 </body>
 </html>
+
 
 
 
